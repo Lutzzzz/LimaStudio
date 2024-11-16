@@ -1,0 +1,8 @@
+ALTER SESSION SET "_ORACLE_SCRIPT" = true;
+
+CREATE USER usr_studiolima IDENTIFIED BY 123456
+DEFAULT TABLESPACE users
+TEMPORARY TABLESPACE temp
+QUOTA 120M ON users;
+
+GRANT connect, resource TO usr_studiolima;
